@@ -4,6 +4,6 @@ description = "About"
 weight = 3
 +++
 
-# Amateur Guitar
+# Edger Dev
 
 ** Under Construction **

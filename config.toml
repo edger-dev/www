@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://www.amateurguitar.com"
+base_url = "https://www.edger.dev"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -16,6 +16,6 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
-juice_logo_name = "Amateur Guitar"
+juice_logo_name = "Edger Dev"
 juice_logo_path = "juice.svg"
-repository_url = "https://github.com/amateurguitar/feedbacks"
+repository_url = "https://github.com/edger-dev/feedbacks"
