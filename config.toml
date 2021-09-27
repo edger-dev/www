@@ -9,6 +9,14 @@ build_search_index = false
 
 theme = "juice"
 
+[languages.en]
+[languages.en.translations]
+title = "Edger Dev"
+slogan = ""
+slogan2 = ""
+explore_more = "Explore More ⇩"
+footer = "Edger Dev © 2021"
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -16,6 +24,9 @@ highlight_code = false
 
 [extra]
 # Put all your custom variables here
+default_language = "en"
 juice_logo_name = "Edger Dev"
 juice_logo_path = "juice.svg"
+juice_hero_path = "juice.svg"
+juice_hero_width = "40%"
 repository_url = "https://github.com/edger-dev/feedbacks"
