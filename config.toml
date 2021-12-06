@@ -5,7 +5,7 @@ base_url = "https://www.edger.dev"
 compile_sass = true
 
 # Whether to build a search index to be used later on by a JavaScript library
-build_search_index = false
+build_search_index = true
 
 theme = "juice"
 
@@ -33,5 +33,5 @@ repository_url = "https://github.com/edger-dev/feedbacks"
 juice_extra_menu = [
     { title = "Amateur Guitar", link = "https://www.amateurguitar.com"},
     { title = "Fun Notation", link = "https://www.notation.fun"},
-    { title = "Blog", link = "https://edger.substack.com"}
+    { title = "News", link = "https://edger.substack.com"}
 ]
