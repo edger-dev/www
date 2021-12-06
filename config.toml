@@ -12,8 +12,8 @@ theme = "juice"
 [languages.en]
 [languages.en.translations]
 title = "Edger Dev"
-slogan = ""
-slogan2 = ""
+slogan = "Coding for Fun and Profit"
+slogan2 = "(mostly for fun)"
 explore_more = "Explore More ⇩"
 footer = "Edger Dev © 2021"
 
@@ -26,7 +26,12 @@ highlight_code = false
 # Put all your custom variables here
 default_language = "en"
 juice_logo_name = "Edger Dev"
-juice_logo_path = "juice.svg"
-juice_hero_path = "juice.svg"
-juice_hero_width = "40%"
+juice_logo_path = "icon.svg"
+juice_hero_path = "edger.svg"
+juice_hero_width = "45%"
 repository_url = "https://github.com/edger-dev/feedbacks"
+juice_extra_menu = [
+    { title = "Amateur Guitar", link = "https://www.amateurguitar.com"},
+    { title = "Fun Notation", link = "https://www.notation.fun"},
+    { title = "Blog", link = "https://edger.substack.com"}
+]
