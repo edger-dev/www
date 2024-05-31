@@ -9,7 +9,7 @@
         visible.set(true);
     });
 </script>
-<div class="flex flex-col-reverse md:flex-row place-content-between">
+<div class="flex flex-col-reverse md:flex-row place-content-around">
     <div class="flex flex-col place-content-center">
         <div class="text-center text-xl font-bold">
             {#if $visible}
