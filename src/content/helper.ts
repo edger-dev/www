@@ -1,5 +1,6 @@
 import { getCollection, type CollectionEntry, getEntryBySlug } from "astro:content";
 import { marked } from 'marked';
+import fs from 'node:fs/promises';
 
 export type ProjectEntry = CollectionEntry<"projects">;
 export type DemoEntry = CollectionEntry<"demos">;
@@ -64,24 +65,25 @@ export const get_all_demos = async function()
 }
 
 export const get_readme = async function(slug: string): Promise<null | string> {
-    const entry = await getEntryBySlug("readme", slug);
-    if (entry) {
-        console.log("get_readme() ", slug, " found, -> ", entry.body.length);
-        return entry.body;
+    try {
+        const url = new URL("../../readme/" + slug + ".md", import.meta.url);
+        const json = await fs.readFile(url, 'utf-8');
+        return json;
+    } catch (err: unknown) {
+        console.error("get_readme()", slug, "->", err);
     }
-    console.log("get_readme() ", slug, " not found");
     return null;
 }
 
 export const render_readme = async function(slug: string, readme?: string): Promise<null | string> {
     if (readme) {
-        const markdown = await get_readme(slug);
-        marked.use(baseUrl(readme));
-        if (markdown) {
-            const content = marked.parse(markdown, {
+        const content = await get_readme(slug);
+        if (content) {
+            marked.use(baseUrl(readme));
+            const result = marked.parse(content, {
                 gfm: true,
             });
-            return content;
+            return result;
         }
     }
     return null;

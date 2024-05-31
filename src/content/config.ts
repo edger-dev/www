@@ -15,12 +15,6 @@ const projects = defineCollection({
     }),
 });
 
-const readme = defineCollection({
-    type: "content",
-    schema: z.object({
-    }),
-});
-
 const blocks = defineCollection({
     type: "content",
     schema: z.object({
@@ -30,6 +24,5 @@ const blocks = defineCollection({
 export const collections = {
   "projects": projects,
   "demos": projects,
-  "readme": readme,
   "blocks": blocks,
 };
