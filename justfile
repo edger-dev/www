@@ -23,3 +23,17 @@ fetch-all:
     just fetch-notation-fun
     just fetch-dioxus-class
     just fetch-based-cooking
+
+list-pages:
+    npx wrangler pages deployment list
+
+copy-headers:
+    cp -v _headers dist/
+
+preview:
+    just copy-headers
+    npx wrangler pages dev dist --ip 0.0.0.0
+
+deploy:
+    just copy-headers
+    npx wrangler pages deploy
