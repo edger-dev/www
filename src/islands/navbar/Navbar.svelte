@@ -5,13 +5,7 @@
         NavLi,
         NavUl,
         NavHamburger,
-        Dropdown,
-        DropdownItem,
-        DropdownDivider,
-        DarkMode,
-        DropdownHeader,
     } from "flowbite-svelte";
-    import { ChevronDownOutline } from "flowbite-svelte-icons";
     import { page_path } from "@islands/states";
 
     let projects_opened = false;
@@ -38,8 +32,8 @@
     <NavHamburger />
     <NavUl activeUrl={$page_path}>
         <NavLi href="/">Home</NavLi>
-        <NavLi href="/projects">Projects</NavLi>
-        <NavLi href="/demos">Demos</NavLi>
+        <NavLi href="/projects/">Projects</NavLi>
+        <NavLi href="/demos/">Demos</NavLi>
         <!--
         <NavLi href="https://edger.substack.com" target="_blank">News</NavLi>
         -->
