@@ -1,0 +1,19 @@
+---
+import Layout from "@layouts/Layout.astro";
+import ProjectGrid from "@components/ProjectGrid.svelte";
+import { get_all_demos, convert_demo } from "src/content/helper";
+
+const all_demo_entries = await get_all_demos();
+
+all_demo_entries.sort((a, b) => b.data.weight - a.data.weight);
+
+const all_demos = all_demo_entries
+    .map(convert_demo);
+
+---
+
+<Layout title="Home">
+    <ProjectGrid client:load data={all_demos} collections="demos"/>
+</Layout>
+
+

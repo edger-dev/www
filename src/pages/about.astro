@@ -1,0 +1,14 @@
+---
+import Layout from "@layouts/Layout.astro";
+import AboutMe from "@blocks/about_me.md";
+import Service from "@blocks/service.md";
+import About from "@components/About.svelte";
+---
+
+<Layout title="Home">
+    <About>
+        <AboutMe />
+        <Service slot="service"/>
+    </About>
+</Layout>
+

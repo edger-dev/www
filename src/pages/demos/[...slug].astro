@@ -1,0 +1,35 @@
+---
+import Layout from "@layouts/Layout.astro";
+import ProjectHead from "@components/ProjectHead.svelte";
+import DetailPanel from "@components/DetailPanel.svelte";
+import { type DemoEntry, get_all_demos, render_readme, convert_demo } from "src/content/helper";
+
+export async function getStaticPaths() {
+    const all_demos = await get_all_demos();
+    return all_demos.map(entry => ({
+        params: { slug: entry.slug },
+        props: {
+            entry,
+        },
+    }));
+}
+
+interface Props {
+    entry: DemoEntry;
+}
+
+const { entry } = Astro.props;
+
+const { Content } = await entry.render();
+
+const project = convert_demo(entry);
+const readme = await render_readme(entry.slug, entry.data.readme);
+
+---
+
+<Layout title={entry.data.title}>
+    <ProjectHead client:load data={project} />
+    <DetailPanel client:load data={readme} readme_url={entry.data.readme}>
+        <Content />
+    </DetailPanel>
+</Layout>

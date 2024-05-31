@@ -1,0 +1,19 @@
+---
+import Layout from "@layouts/Layout.astro";
+import ProjectGrid from "@components/ProjectGrid.svelte";
+import { get_all_projects, convert_project } from "src/content/helper";
+
+const all_project_entries = await get_all_projects();
+
+all_project_entries.sort((a, b) => b.data.weight - a.data.weight);
+
+const all_projects = all_project_entries
+    .map(convert_project);
+
+---
+
+<Layout title="Home">
+    <ProjectGrid client:load data={all_projects} collections="projects"/>
+</Layout>
+
+
