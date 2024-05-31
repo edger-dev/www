@@ -10,7 +10,7 @@ Some of current tried ideas:
 
 ### Guitar tabs to show both pitch and durations for notes
 
-![Guitar Tab](docs/images/guitar_tab.png?raw=true)
+![Guitar Tab](https://github.com/notation-fun/notation/blob/main/docs/images/guitar_tab.png?raw=true)
 
 In this image, the guitar tab is shown in full feature mode, with left hand chord shape, right hand pick pattern (you can also change the setting to always show fret numbers), and above them the actually notes produced with names (in number, can also shown as Do Re Mi), and the lyrics and melody, also chords view on top, and guitar view on the left.
 
@@ -18,7 +18,7 @@ I think this is really useful for beginners, or try to analyse music in a deeper
 
 Most of the elements can be turned on/off, e.g. after learned a tab, you may want to show the chords and lyrics when playing:
 
-![Song Book](docs/images/song_book.png?raw=true)
+![Song Book](https://github.com/notation-fun/notation/blob/main/docs/images/song_book.png?raw=true)
 
 (planning to make the layout a bit nicer, [#156](https://github.com/notation-fun/notation/issues/156))
 
@@ -26,7 +26,7 @@ Most of the elements can be turned on/off, e.g. after learned a tab, you may wan
 
 Colors are based on the relative notation.
 
-![Notes](docs/images/scarborough_fair_notes.png?raw=true)
+![Notes](https://github.com/notation-fun/notation/blob/main/docs/images/scarborough_fair_notes.png?raw=true)
 
 I'm using the [Moveable Do Solfège](https://en.wikipedia.org/wiki/Solf%C3%A8ge) for the name of notes, and change the name of the root note for scales other than natural major (ionian).
 
@@ -56,7 +56,7 @@ You may also check the web app for all notes of different scales (modes)
 
 ### Color and shapes for chords
 
-![Chords](docs/images/chords.png?raw=true)
+![Chords](https://github.com/notation-fun/notation/blob/main/docs/images/chords.png?raw=true)
 
 I'm using big circle to represent the root note of a chord, so the color is a quick hint for the level of chords.
 
@@ -92,7 +92,7 @@ Features:
 - A/B repeat for selected bars
 
 
-![Notation Viewer](docs/images/notation_viewer.gif?raw=true)
+![Notation Viewer](https://github.com/notation-fun/notation/blob/main/docs/images/notation_viewer.gif?raw=true)
 
 [Youtube: Canon in D](https://youtu.be/RXdFoTSl7R4)
 
@@ -122,11 +122,11 @@ Also did some quick experiment with other aspects in music theory, put them unde
 
 Currently the most interesting one, is to use animation to visualize the harmonics, you can see why using certain fret for natural harmonics on guitar, and try hearing the different sounds.
 
-![Harmonics](docs/images/sound_harmonics.png?raw=true)
+![Harmonics](https://github.com/notation-fun/notation/blob/main/docs/images/sound_harmonics.png?raw=true)
 
 Another one is to show all the notes in selected scale and key, e.g. F# Mixolydian
 
-![F_Sharp_Mixolydian](docs/images/f_sharp_mixolydian.png?raw=true)
+![F_Sharp_Mixolydian](https://github.com/notation-fun/notation/blob/main/docs/images/f_sharp_mixolydian.png?raw=true)
 
 Plan to add more stuffs while learning something new, current ideas:
 
@@ -141,7 +141,7 @@ Also may do some works around other applications, e.g. add color and note names 
 
 e.g. the following image is the first few bars of Moonlight Sonata 1st Movement, with the colors I can see the chord progression of the first 2 bars is `vi vi7/V`. (the note name is built-in feature from Musescore, I use it to help me to find the key on piano faster)
 
-![MuseScore_Color_Notes_](docs/images/musescore_color_notes.png)
+![MuseScore_Color_Notes_](https://github.com/notation-fun/notation/blob/main/docs/images/musescore_color_notes.png)
 
 Another approach is to add some importer/exporter for my format, e.g. import from guitar pro tabs, can create tabs much faster, export to [Lilypond](http://lilypond.org/) for printed version.
 
