@@ -9,15 +9,15 @@ build:
 
 fetch-notation-fun:
     curl -L "https://github.com/notation-fun/notation/blob/main/README.md?raw=true" \
-        -o readme/notation-fun.md
+        -o src/content/readme/notation-fun.md
 
 fetch-dioxus-class:
     curl -L "https://github.com/edger-dev/dioxus-class/blob/main/README.md?raw=true" \
-        -o readme/dioxus-class.md
+        -o src/content/readme/dioxus-class.md
 
 fetch-based-cooking:
     curl -L "https://github.com/edger-dev/demos/blob/main/based.cooking/README.md?raw=true" \
-        -o readme/based-cooking.md
+        -o src/content/readme/based-cooking.md
 
 fetch-all:
     just fetch-notation-fun

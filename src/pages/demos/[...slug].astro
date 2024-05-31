@@ -23,7 +23,6 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 
 const project = convert_demo(entry);
-
 const readme = await render_readme(entry.slug, entry.data.readme);
 
 ---
