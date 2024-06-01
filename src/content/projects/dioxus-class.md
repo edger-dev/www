@@ -6,7 +6,7 @@ url: "https://github.com/edger-dev/dioxus-class"
 cover: "@assets/dioxus-class/code.png"
 readme: "https://github.com/edger-dev/dioxus-class/blob/main/README.md"
 github: "edger-dev/dioxus-class"
-tags: [ "rust", "dioxus" ]
+tags: [ "rust", "dioxus", "tailwindcss", "daisyui" ]
 short: "Define constants and helper functions for tailwindcss and daisyui, do compile time checking for css classes"
 
 ---
