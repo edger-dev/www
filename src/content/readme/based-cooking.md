@@ -1,6 +1,5 @@
 ---
 
-layout: ../layouts/Markdown.astro
 title: Based Cooking Demo
 
 ---
