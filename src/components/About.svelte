@@ -12,10 +12,12 @@
 <div class="mx-auto max-w-[640px] text-begin flex flex-col gap-4 leading-7">
     <slot />
 
+    <!--
     <Heading tag="h2" class="text-center mt-8 mb-4">Service</Heading>
     <article class="prose">
         <slot name="service" />
     </article>
+    -->
 
     <Heading tag="h2" class="text-center mt-8">Links</Heading>
     <div class="flex flex-row gap-4 place-content-end">
