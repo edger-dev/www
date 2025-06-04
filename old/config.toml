@@ -33,6 +33,6 @@ juice_hero_width = "45%"
 repository_url = "https://github.com/edger-dev/feedbacks"
 juice_extra_menu = [
     { title = "Amateur Guitar", link = "https://www.amateurguitar.com"},
-    { title = "Fun Notation", link = "https://www.notation.fun"},
+    { title = "Fun Notation", link = "https://notation.edger.dev"},
     { title = "News", link = "https://edger.substack.com"}
 ]

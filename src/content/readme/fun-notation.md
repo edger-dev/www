@@ -52,7 +52,7 @@ If you are a Musescore user, I've also forked a plugin to change color of the no
 
 You may also check the web app for all notes of different scales (modes)
 
-- https://www.notation.fun/notation_kb/kb?lang=en-US
+- https://notation.edger.dev/notation_kb/kb?lang=en-US
 
 ### Color and shapes for chords
 
@@ -96,7 +96,7 @@ Features:
 
 [Youtube: Canon in D](https://youtu.be/RXdFoTSl7R4)
 
-[Try in browser](https://www.notation.fun/notation/viewer?lang=en-US&tab=tabs/scarborough_fair.ron)
+[Try in browser](https://notation.edger.dev/notation/viewer?lang=en-US&tab=tabs/scarborough_fair.ron)
 Note that the web version is only working properly in desktop browser, the audio is not very nice, the touch input is not working reliable on mobile browsers yet, and may have performance issues on certain devices.
 
 [Desktop versions](https://github.com/notation-fun/notation/releases) can be downloaded from releases.
@@ -118,7 +118,7 @@ At this moment, there is no visual editor yet, instead a DSL in Rust is created 
 
 ## Knowledge Base
 
-Also did some quick experiment with other aspects in music theory, put them under `apps/notation_kb`, You can check the [web app](https://www.notation.fun/notation_kb/kb?lang=en-US)
+Also did some quick experiment with other aspects in music theory, put them under `apps/notation_kb`, You can check the [web app](https://notation.edger.dev/notation_kb/kb?lang=en-US)
 
 Currently the most interesting one, is to use animation to visualize the harmonics, you can see why using certain fret for natural harmonics on guitar, and try hearing the different sounds.
 
